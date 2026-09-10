@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservieren — RÜYA Cafe &amp; Restaurant</title>
+<meta name="description" content="Reservieren Sie Ihren Tisch bei RÜYA Cafe & Restaurant. Frühstück, Grillabend oder Kaffee und Künefe. Gruppen und Feiern auf Anfrage.">
+<meta name="theme-color" content="#0a0907">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');window.addEventListener('load',function(){setTimeout(function(){var p=document.querySelector('.preloader');if(p)p.classList.add('done');},3500);});</script>
+</head>
+<body>
+<div class="marble-bg"></div><div class="marble-veins"></div><div class="grain"></div>
+<div class="frame" aria-hidden="true"><i class="tl"></i><i class="tr"></i><i class="bl"></i><i class="br"></i></div>
+
+<nav class="nav" aria-label="Hauptnavigation">
+  <a class="nav-brand" href="index.html" aria-label="RÜYA, zur Startseite">
+    <span class="mark"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M26 12c-2.4 2.3-2.4 4.6 0 6.9s2.4 4.6 0 6.9"/><path d="M36 10c-2.7 2.6-2.7 5.2 0 7.8s2.7 5.2 0 7.8"/><path d="M13 29h33v7c0 8.5-7 13.5-16.5 13.5S13 44.5 13 36z"/><path d="M46 31h4.5a6.5 6.5 0 0 1 0 13H47"/><path d="M11 55h42"/></svg></span>
+    <span><span class="nav-brand-name">RÜYA</span><span class="nav-brand-sub">Cafe &amp; Restaurant</span></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a class="nav-link" href="index.html">Start</a>
+    <a class="nav-link" href="menu.html">Speisekarte</a>
+    <a class="nav-link" href="torten.html">Torten</a>
+    <a class="nav-link" href="about.html">Über uns</a>
+    <a class="nav-link" href="gallery.html">Galerie</a>
+    <a class="nav-link" href="contact.html">Kontakt</a>
+    <a class="nav-cta" href="reservation.html" aria-current="page">Reservieren</a>
+  </div>
+  <button class="nav-burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span></button>
+</nav>
+
+<header class="page-intro">
+  <div class="shell">
+    <p class="kicker" style="justify-content:center">Reservierung / Rezervasyon</p>
+    <h1 class="sec-title" style="color:var(--ink)">Ihr Tisch am Feuer.<span class="tr">Buyurun, sofranız hazır</span></h1>
+  </div>
+</header>
+
+<section class="section res" style="padding-top:clamp(20px,3vw,40px)">
+  <div class="res-bg" aria-hidden="true"><div class="media"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1700&q=80" alt="" loading="lazy"></div></div>
+  <div class="shell res-grid">
+    <div>
+      <h2 class="sec-title" style="font-size:clamp(26px,3.6vw,44px)">Wir halten Ihnen den <em>besten Platz</em> frei.</h2>
+      <p class="lead">Senden Sie uns Ihre Anfrage, wir bestätigen sie persönlich. Für größere Runden oder Feiern rufen Sie uns am besten kurz an.</p>
+      <div class="res-points">
+        <div class="res-point"><b>Öffnungszeiten</b><span>Montag bis Sonntag, <span class="ph" title="Platzhalter, bitte ersetzen">09:00 bis 23:00 Uhr</span>. Küche bis 22:00 Uhr.</span></div>
+        <div class="res-point"><b>Frühstück</b><span>Reichhaltiges Frühstücksbuffet, <span class="ph" title="Platzhalter, bitte ersetzen">Tage &amp; Zeiten auf Anfrage</span>.</span></div>
+        <div class="res-point"><b>Gruppen</b><span>Lange Tafeln für Familien und Feiern, gerne auf Anfrage.</span></div>
+        <div class="res-point"><b>Halal</b><span>Unsere Grillgerichte werden halal zubereitet.</span></div>
+        <div class="res-point"><b>Telefon</b><span><a class="ph" href="tel:+49000000000" title="Platzhalter, bitte ersetzen">+49 (0) 000 000 000</a></span></div>
+      </div>
+    </div>
+    <div class="res-card" data-reveal>
+      <form id="resForm" novalidate>
+        <h3>Tisch anfragen</h3>
+        <p class="sub">Rüya Cafe &amp; Restaurant</p>
+        <div class="f-row">
+          <div class="f-field"><label for="rDate">Datum</label><input id="rDate" name="date" type="date" required></div>
+          <div class="f-field"><label for="rTime">Uhrzeit</label>
+            <select id="rTime" name="time" required>
+              <option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option selected>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="f-field"><label for="rGuests">Personen</label>
+            <select id="rGuests" name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option></select>
+          </div>
+          <div class="f-field"><label for="rName">Name</label><input id="rName" name="name" type="text" placeholder="Ihr Name" required></div>
+        </div>
+        <div class="f-field"><label for="rContact">Telefon oder E-Mail</label><input id="rContact" name="contact" type="text" placeholder="Für die Bestätigung" required></div>
+        <div class="f-field"><label for="rNote">Anmerkung (optional)</label><textarea id="rNote" name="note" rows="2" placeholder="Kinderstuhl, Anlass, Allergien …"></textarea></div>
+        <button class="btn res-submit" type="submit"><span>Tisch anfragen</span><span class="arr">→</span></button>
+        <p class="res-alt">Lieber telefonisch? <a class="ph" href="tel:+49000000000" title="Platzhalter, bitte ersetzen">+49 (0) 000 000 000</a></p>
+      </form>
+      <div class="res-done" id="resDone" role="status">
+        <div class="tick">✦</div>
+        <h4>Teşekkürler!</h4>
+        <p id="resDoneText">Ihre Anfrage ist bei uns, wir bestätigen sie in Kürze.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="mark"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M26 12c-2.4 2.3-2.4 4.6 0 6.9s2.4 4.6 0 6.9"/><path d="M36 10c-2.7 2.6-2.7 5.2 0 7.8s2.7 5.2 0 7.8"/><path d="M13 29h33v7c0 8.5-7 13.5-16.5 13.5S13 44.5 13 36z"/><path d="M46 31h4.5a6.5 6.5 0 0 1 0 13H47"/><path d="M11 55h42"/></svg></span>
+        <p>RÜYA Cafe &amp; Restaurant. Moderne türkisch-europäische Küche, Kaffeekultur und Desserts. Hoş geldiniz.</p>
+      </div>
+      <div><h5>Besuchen</h5><ul><li><span class="ph" title="Platzhalter, bitte ersetzen">Musterstraße 1</span></li><li><span class="ph" title="Platzhalter, bitte ersetzen">00000 Musterstadt</span></li><li>Deutschland</li></ul></div>
+      <div><h5>Öffnungszeiten</h5><ul><li>Montag bis Sonntag</li><li><span class="ph" title="Platzhalter, bitte ersetzen">09:00 – 23:00 Uhr</span></li><li>Küche bis 22:00 Uhr</li></ul></div>
+      <div><h5>Kontakt</h5><ul><li><a class="ph" href="tel:+49000000000" title="Platzhalter, bitte ersetzen">+49 (0) 000 000 000</a></li><li><a class="ph" href="mailto:info@rueya-restaurant.de" title="Platzhalter, bitte ersetzen">info@rueya-restaurant.de</a></li><li><a href="reservation.html">Tisch reservieren</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> RÜYA Cafe &amp; Restaurant. Alle Rechte vorbehalten.</span>
+      <span class="footer-legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span>
+      <span><i>Rüya</i> · türkisch für „Traum“</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
